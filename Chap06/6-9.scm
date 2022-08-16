@@ -1,0 +1,6 @@
+(define (thismany cnt wd)
+  (if (= cnt 1)
+      (se cnt wd)
+      (se cnt (word wd 's))
+      )
+  )

@@ -1,0 +1,6 @@
+(define (sort2 sent)
+  (if (< (last sent) (first sent)) 
+      (se (last sent) (first sent))  
+      (se (first sent) (last sent))
+      )
+  )
