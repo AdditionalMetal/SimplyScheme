@@ -1,0 +1,17 @@
+(define (hasvowel? wd)
+  (cond ((member? 'a wd) #t)
+	((member? 'e wd) #t)
+	((member? 'i wd) #t)
+	((member? 'o wd) #t)
+	((member? 'u wd) #t)
+	(else #f)
+	)
+  )
+
+(define (starts-with-vowel? wd)
+  (member? (first wd) 'aeiou)
+  )
+
+(define (indef-article wd)
+  (se (if (starts-with-vowel? wd) 'an 'a) wd)
+  )

@@ -1,0 +1,8 @@
+(define (type-of x)
+  (cond ((number?   x) 'NUMBER  )
+	((word?     x) 'WORD     )
+	((sentence? x) 'SENTENCE )
+	((boolean?  x) 'BOOLEAN  )
+	(else 'UNKNOWN)
+   )
+  )
