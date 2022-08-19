@@ -1,5 +1,5 @@
 ;; seconds - minutes - hours - days - weeks - monthts - years - decades - centuries
-(define (second  )(*             1  1.0)) (define (second?    time)( = time 1         )) (define (seconds?   time)(> time 1         ))
+(define (second  )(*             1  1.0)) (define (second?    time)(>= time 0         )) (define (seconds?   time)(> time 1         ))
 (define (minute  )(*             1 60.0)) (define (minute?    time)( = time (minute  ))) (define (minutes?   time)(> time (minute  )))
 (define (hour    )(*            60 60.0)) (define (hour?      time)( = time (hour    ))) (define (hours?     time)(> time (hour    )))
 (define (day     )(*       1 24 60 60.0)) (define (day?       time)( = time (day     ))) (define (days?      time)(> time (day     )))
@@ -18,7 +18,7 @@
         ((days?      time) (se (/ time (day    )) 'days      )) ((day?     time) '(1 day    ))
         ((hours?     time) (se (/ time (hour   )) 'hours     )) ((hour?    time) '(1 hour   ))
         ((minutes?   time) (se (/ time (minute )) 'minutes   )) ((minute?  time) '(1 minute ))
-        ((seconds?   time) (se (/ time (second )) 'seconds   )) ((second?  time) '(1 second ))
+        ((seconds?   time) (se (/ time (second )) 'seconds   )) ((second?  time) (se time 'second)) ;; 0 second or 0 seconds?
         (else '(unknown time)))
   )
 
