@@ -4,21 +4,21 @@ I'm thinking it will be element and lists when using SICP...
 
 every - apply to *every* word in the sentence...
         _applies to each element of list?_
-		_perl map_
+        _perl map_
 
 keep  - applies predicate to each element of sentence and keeps #t elements
         _perl grep_
-		
+        
 accumulate - "applies the procedure to two of the words of a
              sentence. Then it applies the procedure to the results we
              got back and another element of the sentence, and so on."
-			 
-			 _Has some limitations with smaller number of arguments..._
+             
+             _Has some limitations with smaller number of arguments..._
 
              Can take word (not sentence) as second argument and then uses letters as elements.
-			 
-			 
-			 
+             
+             
+             
 Table from book...
 
 function   | purpose   | first argument is a ...
@@ -49,7 +49,7 @@ repeated - produced function that iteratively calls function on output of previo
     ((repeated plural 4) 'computer) 
        (plural (plural (plural (plural 'computer))))
        computerssss
-	   
-	((repeated square 2) 3)
-	   (square (square 3))
-	   
+       
+    ((repeated square 2) 3)
+       (square (square 3))
+       

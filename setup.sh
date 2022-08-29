@@ -14,6 +14,6 @@ cd .STklos-build
 make && sudo make install
 
 # Brian Harvey's scm files
-#  Easier than cut-and-paste from his book and hopefully avoids copy-right...
+#  Easier than cut-and-paste from his book and hopefully avoids copyright...
 curl -O https://people.eecs.berkeley.edu/~bh/downloads/simply/simply.scm
 curl -O https://people.eecs.berkeley.edu/~bh/downloads/simply/functions.scm
