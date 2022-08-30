@@ -5,5 +5,5 @@
 ;; Tried using member? but that fails with the whole
 ;; letter/word/sentence transistions ... types are frustrating...
 ;;
-;; Looked at simply.scm to see they are using equal? Which avoids this
-;; issue...
+;; Looked at simply.scm to see they are using equal?
+;; Which avoids this issue... and makes me feel like a cheat.
