@@ -16,9 +16,7 @@ accumulate - "applies the procedure to two of the words of a
              _Has some limitations with smaller number of arguments..._
 
              Can take word (not sentence) as second argument and then uses letters as elements.
-             
-             
-             
+
 Table from book...
 
 function   | purpose   | first argument is a ...
