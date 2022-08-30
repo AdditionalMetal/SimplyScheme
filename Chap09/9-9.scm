@@ -7,7 +7,7 @@
   )
 
 (define (common-words actual guesses)
-  (every (lambda (g) (hang-letter g guesses)) actual)
+  (every (lambda (g) (hang-word g guesses)) actual)
   )
 
 ;; stklos> (load "Chap09/9-9.scm")
