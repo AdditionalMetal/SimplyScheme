@@ -17,11 +17,17 @@ curl -L -O https://www.stklos.net/download/stklos-1.70.tar.gz
 tar xf stklos-1.70.tar.gz
 mv stklos-1.70 .STklos-build
 
-cd .STklos-build
+pushd .STklos-build
 ./configure
 make && sudo make install
+popd
 
 # Brian Harvey's scm files
 #  Easier than cut-and-paste from his book and hopefully avoids copyright...
 curl -L -O https://people.eecs.berkeley.edu/~bh/downloads/simply/simply.scm
 curl -L -O https://people.eecs.berkeley.edu/~bh/downloads/simply/functions.scm
+
+mkdir Chap10
+pushd Chap10
+curl -L -O https://people.eecs.berkeley.edu/~bh/downloads/simply/ttt.scm
+popd

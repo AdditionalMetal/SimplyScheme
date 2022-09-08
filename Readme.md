@@ -1,6 +1,6 @@
 # Simply Scheme
 
-These are my (on-going) solutions to Brian Harvey's [*Simply
+My (on-going) solutions to Brian Harvey's [*Simply
 Scheme*](http://www.cs.berkeley.edu/~bh/ss-toc2.html) which is
 hopefully a gentle slope to
 [SICP](https://sarabander.github.io/sicp/).
