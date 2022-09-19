@@ -34,11 +34,11 @@
         (else '(unknown time)))
   )
 
-;;------------------------------------------------------------
-(define (test-describe-time)
-  (cond ((not (equal? '(9.5 centuries) (describe-time 29959200000))) '(failed 29959200000))
-        ((not (equal? '(15.5 minutes)  (describe-time 930)))         '(failed 930))
-        ((not (equal? '(45 seconds)    (describe-time 45)))          '(failed 45))
-        (else '(Passed all tests - hope there were enough...))
-        )
-  )
+;; ;;------------------------------------------------------------
+;; (define (test-describe-time)
+;;   (cond ((not (equal? '(9.5 centuries) (describe-time 29959200000))) '(failed 29959200000))
+;;         ((not (equal? '(15.5 minutes)  (describe-time 930)))         '(failed 930))
+;;         ((not (equal? '(45 seconds)    (describe-time 45)))          '(failed 45))
+;;         (else '(Passed all tests - hope there were enough...))
+;;         )
+;;   )
